@@ -21,13 +21,13 @@
 title: 5akura's Note Box
 email: sakura_170312@163.com
 description: >- # this means to ignore newlines until "baseurl:"
-    There are 5akura's Study Notes~
+    There are 5akura's Study Notes
 baseurl: '' # the subpath of your site, e.g. /blog
 url: https://5akura0817.github.io # the base hostname & protocol for your site, e.g. http://example.com
-github_username: 5akura0817
+github_username: 5akura
 
 # Build settings
-theme: cayman
+theme: minima
 plugins:
     - jekyll-feed
 # Exclude from processing.
