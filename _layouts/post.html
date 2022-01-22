@@ -4,8 +4,8 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 <p class="meta">
-    {{ page.date | date_to_string }} {% if page.author %} By {{ page.author }}
-    {% endif %} &nbsp;&nbsp;&nbsp;&nbsp;
+    <strong>Create at</strong> {{ page.date | date_to_string }} {% if
+    page.author %} By {{ page.author }} {% endif %} &nbsp;&nbsp;&nbsp;&nbsp;
     <span>Category:</span>
 
     {% assign filter_categories = site.categories | where_exp: "category",
@@ -13,6 +13,8 @@ layout: default
     filter_categories %}
     <a href="{{ category.url }}">#{{category.name}}</a>
     {% endfor %}
+    <br />
+    <strong>Last modified at</strong> {% last_modified_at %d %b %Y %A %H:%M:%S%}
 </p>
 
 {{ content }}
