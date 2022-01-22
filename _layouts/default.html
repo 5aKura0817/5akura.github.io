@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.locale }}">
+    <head>
+        <title>{{ page.title }} | {{ site.title }}</title>
+    </head>
+
+    {% include head.html %}
+
+    <body>
+        {% include page-header.html %}
+
+        <section class="main-content">
+            {{ content }} {% include page-footer.html %}
+        </section>
+    </body>
+</html>
