@@ -1,7 +1,18 @@
 ---
 layout: default
 ---
+
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="meta">
+    {{ page.date | date_to_string }} {% if page.author %} By {{ page.author }}
+    {% endif %} &nbsp;&nbsp;&nbsp;&nbsp;
+    <span>Category:</span>
+
+    {% assign filter_categories = site.categories | where_exp: "category",
+    "page.categories contains category.name" %} {% for category in
+    filter_categories %}
+    <a href="{{ category.url }}">#{{category.name}}</a>
+    {% endfor %}
+</p>
 
 {{ content }}

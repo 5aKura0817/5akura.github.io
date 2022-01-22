@@ -1,8 +1,9 @@
 ---
-layout: post
 title: 'Understand ThreadLocal'
 date: 2021-8-9 00:47:01 +0800
-categories: study note
+author: '5akura'
+categories:
+    - Java_Base
 ---
 
 [TOC]

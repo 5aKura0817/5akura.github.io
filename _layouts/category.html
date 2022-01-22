@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1>{{ page.name }}</h1>
+<h3>{{ content }}</h3>
+<h5>Create at {{ page.create_time | date_to_long_string: "ordinal" }}</h5>
+
+<h2>Posts</h2>
+<ol style="list-style-type: upper-roman" reversed>
+    {% assign filtered_posts = site.posts | where_exp:"post", "post.categories
+    contains page.name" %} {% for post in filtered_posts %}
+    <li>
+        <span>{{ post.date | date_to_string }}</span> &raquo;
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ol>

@@ -1,0 +1,20 @@
+---
+layout: default
+title: Category
+permalink: /category
+---
+
+<div id="category">
+    <h1>Blog Categories</h1>
+    <p>Categories of all posts :)</p>
+    <ol style="list-style-type: square">
+        {% for category in site.categories %}
+        <li>
+            <span>{{ category.create_time | date_to_string }}</span>
+            &raquo;&nbsp;
+            <a href="{{ category.url }}"><strong>{{category.name}}</strong></a>
+            <p>{{ category.content | markdownify }}</p>
+        </li>
+        {% endfor %}
+    </ol>
+</div>

@@ -5,19 +5,17 @@
 
 @font-face {
     font-family: mononoki-italic;
-    src: url(./webfont/mononoki-Italic.woff2);
+    src: url(../webfont/mononoki-Italic.woff2);
 }
 
 @font-face {
     font-family: mononoki-bold-italic;
-    src: url(./webfont/mononoki-BoldItalic.woff2);
+    src: url(../webfont/mononoki-BoldItalic.woff2);
 }
 
 @font-face {
     font-family: mononoki;
-    src: url(./webfont/mononoki-Regular.woff2),
-        url(./webfont/mononoki-BoldItalic.woff2),
-        url(./webfont/mononoki-Italic.woff2), url(./webfont/mononoki-Bold.woff2);
+    src: url(../webfont/mononoki-Regular.woff2);
 }
 
 .highlight table td {
