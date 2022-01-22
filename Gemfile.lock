@@ -124,7 +124,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-avatar (0.7.0)
       jekyll (>= 3.0, < 5.0)
-    jekyll-cayman-theme (0.1.0)
     jekyll-coffeescript (1.1.1)
       coffee-script (~> 2.2)
       coffee-script-source (~> 1.11.1)
@@ -279,9 +278,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  github-pages (~> 223)
-  jekyll-cayman-theme
+  github-pages
   jekyll-feed (~> 0.12)
+  jekyll-remote-theme
+  minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
